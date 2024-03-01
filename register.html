@@ -9,20 +9,24 @@
 <body>
 
 	<div class="form-container sign-in-container">
-		<form action="login.html" method="post">
+		<form class="inserimento" action="login.html" method="post">
 			<h1>Registrati</h1><br>
 			<input type="email" placeholder="Email" />
 			<input type="password" placeholder="Password" />
             <input type="passwordV" placeholder="Conferma la password" />
-			<button>Registrati</button>
+			<input type="submit" class="btn-signIn-signUp" value="Registrati">
 		</form>
 	</div>
 	<div class="overlay-container">
 		<div class="overlay">
 			<div class="overlay-panel overlay-right">
+				
 				<h1>Ciao</h1>
 				<p>Hai già un account? </p>
-				<button class="ghost" id="btnAccediInRegistrati">Accedi</button>
+				<form action="accedi.html">
+					<input type="submit" class="ghost" value="Accedi">
+
+				</form>
 			</div>
 		</div>
 	</div>
