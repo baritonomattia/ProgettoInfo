@@ -12,10 +12,10 @@
     <div class="container">
         <div class="navbar">
             <div class="logo">
-                <img src="/images/logo.png" width="125px">
+                <img src="/images/logo.png" width="225px">
             </div>
             <nav>
-                <ul>
+                <ul id="MenuItems">
                     <li><a href="">Home</a></li>
                     <li><a href="">Prodotti</a></li>
                     <li><a href="">About</a></li>
@@ -25,6 +25,8 @@
                 </ul>
             </nav>
             <img src="images/icons8-borsa-della-spesa-100.png" width="30px" height="30px">
+            <img src="images/icons8-menu-100.png" class="menu-icon" onclick="menutoogle()">
+
         </div>
         <div class="row">
             <div class="col-2">
@@ -63,12 +65,126 @@
 <div class="small-container">
     <h2 class="title">Ultimi arrivi</h2>
     <div class="row">
-        <img src="" alt="">
-    </div>
+        
+        <div class="col-4">
+            <img src="/images/airForce1.png">
+            <h4>Air Force 1</h4>
+            <p>€100.00</p>
+        </div>
 
-    
+        <div class="col-4">
+            <img src="/images/airJordan4Retro.png">
+            <h4>Air Jordan 4 Retro</h4>
+            <p>€150.00</p>
+        </div>
+
+        <div class="col-4">
+            <img src="/images/airMax95.png">
+            <h4>Air Max 95</h4>
+            <p>€110.00</p>
+        </div>
+
+        <div class="col-4">
+            <img src="/images/campusGreen.png">
+            <h4>Adidas Campus </h4>
+            <p>€160.00</p>
+        </div>
+
+        <div class="col-4">
+            <img src="/images/dunkLowGrey.png">
+            <h4>Dunk low</h4>
+            <p>€100.00</p>
+        </div>
+
+        <div class="col-4">
+            <img src="/images/knuSkool.png">
+            <h4>Knu Skool</h4>
+            <p>€90.00</p>
+        </div>
+
+        <div class="col-4">
+            <img src="/images/newBalance9060.png">
+            <h4>New Balance 9060</h4>
+            <p>€120.00</p>
+        </div>
+
+        <div class="col-4">
+            <img src="/images/timberland.png">
+            <h4>Timberland</h4>
+            <p>€200.00</p>
+        </div>
 
     </div>
 </div>
+
+
+<div class="testimonial">
+    <div class="small-container">
+        <h2 class="title">Recensioni dei nostri utenti</h2>
+        <div class="row">
+            
+            <div class="col-3">
+                <i class="fa fa-quote-lef"></i>
+                <p>"Acquistare su questo ecommerce di scarpe è stato un'esperienza fantastica. 
+                    Il sito è facile da navigare, la spedizione è veloce e l'imballaggio è sicuro.
+                    Sono rimasto molto soddisfatto del servizio e lo consiglio vivamente!"</p>
+                <h3>Benedetto Mesti</h3>  
+            </div>
+
+            <div class="col-3">
+                <i class="fa fa-quote-lef"></i>
+                <p>"Servizio impeccabile su questo ecommerce di scarpe! Navigazione facile, spedizione veloce e imballaggio sicuro. Assolutamente soddisfatto e pronto a tornare per altri acquisti."</p>
+                <h3>Giorgio Ornetti</h3>  
+            </div>
+
+            
+            <div class="col-3">
+                <i class="fa fa-quote-lef"></i>
+                <p>"Che meraviglia questo ecommerce di scarpe! Navigazione intuitiva, spedizione rapida e prodotti di qualità. Esperienza d'acquisto impeccabile, consigliatissimo!"</p>
+                <h3>Rosaria Basile</h3>  
+            </div>
+
+        </div>
+    </div>
+</div>
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Scarica la nostra applicazione</h3>
+                    <p>Scarica la nostra applicazione per Android e per i tuoi dispositivi Ios</p>
+                </div>
+                
+                <div class="footer-col-2">
+                    <img src="images/logo.png" width="300px">    
+                </div>
+
+                <div class="footer-col-3">
+                    <h3>Seguici</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>X</li>
+                        <li>Instagram</li>
+                        <li>TikTok</li>
+                    </ul>
+                </div>
+            </div>
+        </div>        
+    </div>
+
+    <script>
+        var MenuItems = document.getElementById("MenuItems"); 
+        MenuItems.style.maxHeight = "0px"
+
+        function menutoogle() {
+            if(MenuItems.style.maxHeight == "0px"){
+                MenuItems.style.maxHeight = "200px"; 
+            }
+            else{
+                MenuItems.style.maxHeight = "0px"; 
+            }
+        }
+    </script>
 </body>
 </html>
