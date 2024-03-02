@@ -16,16 +16,16 @@
             </div>
             <nav>
                 <ul id="MenuItems">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Prodotti</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Contatti</a></li>
-                    <li><a href="">Account</a></li>
+                    <li><a href="/home.html">Home</a></li>
+                    <li><a href="/prodotti.html">Prodotti</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/contatti.html">Contatti</a></li>
+                    
                     
                 </ul>
             </nav>
             <img src="images/icons8-borsa-della-spesa-100.png" width="30px" height="30px">
-            <img src="images/icons8-menu-100.png" class="menu-icon" onclick="menutoogle()">
+            <img src="images/icons8-menu-100.png" class="menu-icon" onclick="menutoggle()">
 
         </div>
         <div class="row">
@@ -177,7 +177,8 @@
         var MenuItems = document.getElementById("MenuItems"); 
         MenuItems.style.maxHeight = "0px"
 
-        function menutoogle() {
+        function menutoggle() {
+            console.log("menu responsive attivo"); 
             if(MenuItems.style.maxHeight == "0px"){
                 MenuItems.style.maxHeight = "200px"; 
             }

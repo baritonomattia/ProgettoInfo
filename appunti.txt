@@ -1,0 +1,5 @@
+home -> descrizione, sistemare menu responsive, aggiungere link, transition recensioni
+about -> controllare link
+contatti -> aggiungere contatti e link
+prodotti -> tutto 
+carrello -> tutto

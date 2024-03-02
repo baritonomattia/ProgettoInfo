@@ -200,6 +200,8 @@ ul{
         top: 70px;
         left: 0; 
         width: 100px;
+        overflow: hidden;
+        transition: max-height 0.5s ;
     }
 
     nav ul li{
@@ -207,8 +209,6 @@ ul{
         margin-right: 50px;
         margin-top: 10px;
         margin-bottom: 10px;
-        overflow: hidden;
-        transition: max 0.5;
     }
 
     nav ul li a{
