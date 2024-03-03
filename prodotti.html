@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prodotti</title>
+    <link href="homeStyle.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="header">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="/images/logo.png" width="225px">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="/home.html">Home</a></li>
+                    <li><a href="/prodotti.html">Prodotti</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/contatti.html">Contatti</a></li>
+                    
+                    
+                </ul>
+            </nav>
+            <img src="images/icons8-borsa-della-spesa-100.png" width="30px" height="30px">
+            <img src="images/icons8-menu-100.png" class="menu-icon" onclick="menutoggle()">
+
+        </div>
+    </div>
+</div>
+
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Scarica la nostra applicazione</h3>
+                    <p>Scarica la nostra applicazione per Android e per i tuoi dispositivi Ios</p>
+                </div>
+                
+                <div class="footer-col-2">
+                    <img src="images/logo.png" width="300px">    
+                </div>
+
+                <div class="footer-col-3">
+                    <h3>Seguici</h3>
+                    <ul>
+                        <li><a href="https://www.google.it/?hl=it"> Facebook</a></li>
+                        <li><a href="https://www.google.it/?hl=it"> X</a></li>
+                        <li><a href="https://www.google.it/?hl=it"> Instagram</a></li>
+                        <li><a href="https://www.google.it/?hl=it"> TikTok</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>        
+    </div>
+
+    <script>
+        var MenuItems = document.getElementById("MenuItems"); 
+        MenuItems.style.maxHeight = "0px"
+
+        function menutoggle() {
+            console.log("menu responsive attivo"); 
+            if(MenuItems.style.maxHeight == "0px"){
+                MenuItems.style.maxHeight = "200px"; 
+            }
+            else{
+                MenuItems.style.maxHeight = "0px"; 
+            }
+        }
+    </script>
+</body>
+</html>
