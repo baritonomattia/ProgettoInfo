@@ -146,7 +146,7 @@ h4{
 }
 
 .testimonial .col-3:hover{
-    transition: translateY(-10px);
+    transition: translateY(-30px);
 }
 .col-3 p{
     font-size: 12px;
